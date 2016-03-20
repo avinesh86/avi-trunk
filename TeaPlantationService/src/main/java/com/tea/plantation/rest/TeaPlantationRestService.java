@@ -8,30 +8,30 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.tea.plantation.Track;
+import com.tea.plantation.PermEmpSalary;
 
-@Path("/json/metallica")
+@Path("/teaPlantation/")
 public class TeaPlantationRestService {
 
 	@GET
-	@Path("/get")
+	@Path("/getEmployeeDetails")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Track getTrackInJSON() {
+	public PermEmpSalary getTrackInJSON() {
 
-		Track track = new Track();
-		track.setTitle("Enter Sandman");
-		track.setSinger("Metallica");
+		PermEmpSalary PermEmpSalary = new PermEmpSalary();
+		PermEmpSalary.setCategoryID(3L);
+		PermEmpSalary.setWorkingHrs(8.0);
 
-		return track;
+		return PermEmpSalary;
 
 	}
 
 	@POST
-	@Path("/post")
+	@Path("/addEmployeeDetails/")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response createTrackInJSON(Track track) {
+	public Response createTrackInJSON(PermEmpSalary permEmpSalary) {
 
-		String result = "Track saved : " + track;
+		String result = "Track saved : " + permEmpSalary;
 		return Response.status(201).entity(result).build();
 		
 	}
