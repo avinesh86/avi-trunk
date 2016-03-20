@@ -38,7 +38,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutDate"
-        android:id="@+id/layoutFerR"
+        android:id="@+id/layoutMisR"
         android:orientation="horizontal" >
 
         <TextView
@@ -46,7 +46,7 @@
             android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Remarks"
-            android:id="@+id/txtTR"
+            android:id="@+id/txtMisR"
             android:layout_marginLeft="48dp"
             android:layout_marginStart="48dp"
             />
@@ -54,9 +54,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
+            android:inputType="text"
             android:ems="10"
-            android:id="@+id/editTxtFdId"
+            android:id="@+id/editTxtMisId"
 
             android:layout_centerHorizontal="true" />
     </LinearLayout>
@@ -64,37 +64,8 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/layoutWeight"
-        android:layout_below="@+id/layoutFerR"
-        android:orientation="horizontal"
-        android:weightSum="1">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Weight"
-            android:id="@+id/txtWeight"
-            android:layout_marginLeft="48dp"
-            android:layout_marginStart="48dp"
-            android:layout_weight="0.56" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editTxtWeight"
-
-            android:layout_centerHorizontal="true" />
-    </LinearLayout>
-
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layoutAmt"
-        android:layout_below="@+id/layoutWeight"
+        android:id="@+id/layoutMisAmt"
+        android:layout_below="@+id/layoutMisR"
         android:orientation="horizontal"
         android:weightSum="1">
 
@@ -103,7 +74,7 @@
             android:layout_height="30dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Amount"
-            android:id="@+id/txtAmt"
+            android:id="@+id/txtMisAmt"
             android:layout_marginLeft="48dp"
             android:layout_marginStart="48dp"
             android:layout_weight="0.56" />
@@ -113,8 +84,9 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editTxtAmt"
+            android:id="@+id/editTxtMisAmt"
 
             android:layout_centerHorizontal="true" />
     </LinearLayout>
+
 </RelativeLayout>
