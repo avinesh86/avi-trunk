@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/page_background_blue"
+    android:orientation="vertical" >
+
+    <ViewStub
+        android:id="@+id/vsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/header"
+        android:layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="225dp"
+
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/perm_emp"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/queen"
+                android:onClick="onButtonClicker"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/perm_Emp" />
+
+            <Button
+                android:id="@+id/cont_emp"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/queen"
+                android:onClick="onButtonClicker"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/Cont_Emp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                style="@style/HomeButton"
+                >
+
+                <TextView
+                    android:id="@+id/txtChangeShift"
+                    style="@style/RoundedButtonGreen"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:text="1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/leaves"
+                    style="@style/HomeButton"
+                    android:drawableTop="@drawable/queen"
+                    android:onClick="onButtonClicker"
+                    android:textSize="25dp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/Leaves"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/food"
+                style="@style/HomeButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:drawableTop="@drawable/queen"
+                android:onClick="onButtonClicker"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/Food" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/transport"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/queen"
+                android:onClick="onButtonClicker"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/Transport" />
+
+            <Button
+                android:id="@+id/fertilizer"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/queen"
+                android:onClick="onButtonClicker"
+                android:textSize="25dp"
+                android:text="@string/Fertilizer"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="perm_Emp">Perm Emp</string>
+    <string name="Cont_Emp">Cont Emp</string>
+    <string name="Leaves">Leaves</string>
+    <string name="Food">Food</string>
+    <string name="Transport">Transport</string>
+    <string name="Fertilizer">Fertilizer</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_perm__emp">Perm_Emp</string>
+    <string name="title_activity_cont__emp">Cont_Emp</string>
+    <string name="title_activity_leaves">Leaves</string>
+    <string name="title_activity_transport">Transport</string>
+    <string name="title_activity_food">Food</string>
+    <string name="title_activity_fertilizer">Fertilizer</string>
+
+
+</resources>
