@@ -1,0 +1,9 @@
+package com.avi.teap;
+
+import javax.ws.rs.*;
+
+@Path("/")
+public class TeapMain {
+
+
+}
